@@ -123,7 +123,7 @@ let click = function(square){
  
     // shows to the user either if the square they pushed is a bomb or an open space, if open gives it a number or...
     if(square.classList.contains('open')){
-        square.innerText = data
+        //square.innerText = data
         square.style.background = selectedColor;
         if(data !== 0){
             square.innerText = data;
