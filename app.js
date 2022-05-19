@@ -100,9 +100,10 @@ let setData = function(){
         }
         
         if(square.classList.contains('first-click')){
-            square.innerText = square.getAttribute('data');
             if(square.getAttribute('data') === 0){
                 mineless(square);
+            } else {
+                square.innerText = square.getAttribute('data');
             }
        }
    }
