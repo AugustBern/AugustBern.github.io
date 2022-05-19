@@ -2,7 +2,7 @@
 // Mine Sweeper 
 // August Bernberg
 // 4/5/22
-// ...
+// https://github.com/AugustBern/AugustBern.github.io/blob/main/app.js
 
 ////////////////////////////////////////////////////
 // Global Variables
