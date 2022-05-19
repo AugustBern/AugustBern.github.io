@@ -100,7 +100,7 @@ let setData = function(){
         }
         
         if(square.classList.contains('first-click')){
-            if(square.getAttribute('data') === 0){
+            if(square.getAttribute('data') == 0){
                 mineless(square);
             } else {
                 square.innerText = square.getAttribute('data');
@@ -124,12 +124,12 @@ let click = function(square){
  
     // shows to the user either if the square they pushed is a bomb or an open space, if open gives it a number or...
     if(square.classList.contains('open')){
-        //square.innerText = data
         square.style.background = selectedColor;
         if(data !== 0){
             square.innerText = data;
         } else if(!square.classList.contains('first-click')){
             //does = 0, check around
+            square.innerText = '';
             mineless(placement); // ... or it open up areas around the open space - until it reaches a space that has a number - if the data inside it is 0(no bombs around this square) 
         }
     } else {
