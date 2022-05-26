@@ -38,6 +38,7 @@ let createBoard = function(){
         square.classList.add('create');
         grid.appendChild(square);
         squares.push(square);
+        document.getElementById('bombs-left').innerText = Math.floor((width*width)/5);
  
         square.addEventListener('click', function(){
             console.log('wokring');
